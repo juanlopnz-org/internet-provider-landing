@@ -43,7 +43,6 @@ export default function AdminPanel({ config, onSave }: AdminPanelProps) {
 
   return (
     <>
-      {/* Admin Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-8 right-8 z-50 w-14 h-14 bg-gradient-to-br from-purple-600 to-purple-700 text-white rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center group"
@@ -56,18 +55,14 @@ export default function AdminPanel({ config, onSave }: AdminPanelProps) {
         <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full animate-pulse"></span>
       </button>
 
-      {/* Admin Panel */}
       {isOpen && (
         <div className="fixed inset-0 z-50 overflow-hidden">
-          {/* Backdrop */}
           <div
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={() => setIsOpen(false)}
           ></div>
 
-          {/* Panel */}
           <div className="absolute right-0 top-0 bottom-0 w-full max-w-2xl bg-white shadow-2xl overflow-y-auto">
-            {/* Header */}
             <div className="sticky top-0 z-10 bg-gradient-to-r from-purple-600 to-purple-700 text-white p-6 shadow-lg">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-2xl font-bold flex items-center gap-3">
@@ -86,7 +81,6 @@ export default function AdminPanel({ config, onSave }: AdminPanelProps) {
                 </button>
               </div>
 
-              {/* Tabs */}
               <div className="flex gap-2">
                 {[
                   { id: 'general', label: 'General', icon: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
@@ -97,11 +91,10 @@ export default function AdminPanel({ config, onSave }: AdminPanelProps) {
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id as any)}
-                    className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 ${
-                      activeTab === tab.id
+                    className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 ${activeTab === tab.id
                         ? 'bg-white text-purple-600'
                         : 'bg-white/10 hover:bg-white/20'
-                    }`}
+                      }`}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={tab.icon} />
@@ -112,9 +105,7 @@ export default function AdminPanel({ config, onSave }: AdminPanelProps) {
               </div>
             </div>
 
-            {/* Content */}
             <div className="p-6 space-y-6">
-              {/* General Tab */}
               {activeTab === 'general' && (
                 <div className="space-y-6">
                   <div>
@@ -187,7 +178,6 @@ export default function AdminPanel({ config, onSave }: AdminPanelProps) {
                 </div>
               )}
 
-              {/* Theme Tab */}
               {activeTab === 'theme' && (
                 <div className="space-y-6">
                   <div className="grid grid-cols-2 gap-4">
@@ -295,7 +285,6 @@ export default function AdminPanel({ config, onSave }: AdminPanelProps) {
                 </div>
               )}
 
-              {/* Sections Tab */}
               {activeTab === 'sections' && (
                 <div className="space-y-4">
                   <p className="text-sm text-gray-600 mb-6">
@@ -308,9 +297,8 @@ export default function AdminPanel({ config, onSave }: AdminPanelProps) {
                       className="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-gray-100 cursor-pointer transition-colors"
                     >
                       <div className="flex items-center gap-3">
-                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${
-                          value ? 'bg-green-100 text-green-600' : 'bg-gray-200 text-gray-400'
-                        }`}>
+                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${value ? 'bg-green-100 text-green-600' : 'bg-gray-200 text-gray-400'
+                          }`}>
                           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             {value ? (
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -332,7 +320,6 @@ export default function AdminPanel({ config, onSave }: AdminPanelProps) {
                 </div>
               )}
 
-              {/* Content Tab */}
               {activeTab === 'content' && (
                 <div className="space-y-6">
                   <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
@@ -379,7 +366,6 @@ export default function AdminPanel({ config, onSave }: AdminPanelProps) {
               )}
             </div>
 
-            {/* Footer */}
             <div className="sticky bottom-0 bg-white border-t border-gray-200 p-6 flex gap-4">
               <button
                 onClick={handleSave}

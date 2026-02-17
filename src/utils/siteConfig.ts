@@ -114,14 +114,14 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  siteName: "GABANG COMUNICACIONES S.A.S",
+  siteName: "JUANLOPNZ S.A.S",
   tagline: "Internet de Alta Velocidad Para Zonas de Difícil Acceso",
   description: "Líderes en telecomunicaciones rurales. Conectamos tu hogar o empresa con Internet simétrico de alta calidad donde otros no llegan",
 
   contact: {
     whatsapp: [`+57 ${spacingWhatsAppNumber(whatsAppNumber)}`],
-    email: "gabangcomunicaciones@gmail.com",
-    address: "Calle 7a # 3a-61",
+    email: "jucalora@gmail.com",
+    address: "Calle 7a # 1-23",
     location: "El Placer (El Cerrito - Valle)",
     schedule: {
       weekdays: "8:00 AM - 12:00 PM, 2:00 PM - 6:00 PM",
@@ -157,11 +157,6 @@ export const siteConfig: SiteConfig = {
       tertiary: { text: "WhatsApp", link: `https://wa.me/57${whatsAppNumber}` }
     },
     stats: [
-      // {
-      //   label: "100%",
-      //   value: "Internet Simétrico",
-      //   description: "Velocidad garantizada de subida y bajada"
-      // },
       {
         label: "500+",
         value: "Clientes Conectados",
@@ -178,7 +173,7 @@ export const siteConfig: SiteConfig = {
   about: {
     title: "Sobre Nosotros",
     content: [
-      "GABANG COMUNICACIONES S.A.S es una empresa joven ubicada en El Placer – El Cerrito (Valle del Cauca), dedicada a la prestación de servicios integrales de telecomunicaciones e informática. Nacimos con el propósito de llevar servicios de Internet a zonas de difícil acceso, donde no existe cobertura tradicional.",
+      "JUANLOPNZ S.A.S es una empresa joven ubicada en El Placer – El Cerrito (Valle del Cauca), dedicada a la prestación de servicios integrales de telecomunicaciones e informática. Nacimos con el propósito de llevar servicios de Internet a zonas de difícil acceso, donde no existe cobertura tradicional.",
       "Contamos con infraestructura en Candelaria, Palmira, El Cerrito, El Placer, El Castillo, La Pampa y Boyacá. Además, ofrecemos instalación de cámaras de seguridad para hogares, comercios y empresas, con acceso remoto desde PC o smartphone."
     ],
     specialty: {
@@ -186,11 +181,6 @@ export const siteConfig: SiteConfig = {
       description: "Brindamos soluciones de conectividad a zonas rurales y de difícil acceso, llevando Internet estable y de alta calidad donde los grandes operadores no tienen cobertura."
     },
     features: [
-      // {
-      //   icon: "users",
-      //   title: "Equipo Experto",
-      //   description: "Personal altamente calificado"
-      // },
       {
         icon: "award",
         title: "Calidad",
@@ -212,10 +202,6 @@ export const siteConfig: SiteConfig = {
         label: "500+",
         value: "Clientes Satisfechos"
       },
-      // {
-      //   label: "99.9%",
-      //   value: "Uptime Garantizado"
-      // }
     ]
   },
 
@@ -304,21 +290,6 @@ export const siteConfig: SiteConfig = {
         ],
         buttonText: "Consultar Disponibilidad"
       },
-      // {
-      //   name: "Ultra Velocidad",
-      //   speed: "200 Mbps",
-      //   price: 80000,
-      //   period: "por mes",
-      //   description: "Máxima velocidad para uso intensivo",
-      //   features: [
-      //     "Velocidad simétrica: 200 Mbps",
-      //     "Subida y bajada iguales",
-      //     "Sin límite de datos",
-      //     "Soporte técnico prioritario",
-      //     "Streaming 4K sin interrupciones"
-      //   ],
-      //   buttonText: "Consultar Disponibilidad"
-      // }
     ]
   },
 
@@ -344,12 +315,6 @@ export const siteConfig: SiteConfig = {
         link: "https://www.speedtest.net/es",
         color: "purple"
       },
-      // {
-      //   name: "Consultar Planes Empresariales",
-      //   description: "Descubre nuestras soluciones corporativas personalizadas",
-      //   link: "#planes-empresariales",
-      //   color: "blue"
-      // }
     ]
   }
 };

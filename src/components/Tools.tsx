@@ -14,7 +14,6 @@ export default function Tools({ config }: ToolsProps) {
   return (
     <section id="herramientas" className="section bg-mesh">
       <div className="container-custom">
-        {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -28,7 +27,6 @@ export default function Tools({ config }: ToolsProps) {
           <p className="text-xl text-gray-600">{config.subtitle}</p>
         </div>
 
-        {/* Tools Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {config.items.map((tool, index) => (
             <a
@@ -60,7 +58,6 @@ export default function Tools({ config }: ToolsProps) {
           ))}
         </div>
 
-        {/* Additional Info */}
         <div className="mt-16 max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="flex flex-col md:flex-row items-center gap-6">

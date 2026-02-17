@@ -36,7 +36,6 @@ export default function Services({ config }: ServicesProps) {
   return (
     <section id="servicios" className="section bg-mesh">
       <div className="container-custom">
-        {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="mb-6">
             Nuestros <span className="text-gradient">Servicios</span>
@@ -44,7 +43,6 @@ export default function Services({ config }: ServicesProps) {
           <p className="text-xl text-gray-600">{config.subtitle}</p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {config.items.map((service, index) => (
             <div

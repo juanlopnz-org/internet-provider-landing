@@ -38,7 +38,6 @@ export default function About({ config }: AboutProps) {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          {/* Content */}
           <div className="space-y-6">
             {config.content.map((paragraph, index) => (
               <p key={index} className="text-lg text-gray-700 leading-relaxed">
@@ -46,14 +45,12 @@ export default function About({ config }: AboutProps) {
               </p>
             ))}
 
-            {/* Specialty highlight */}
             <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 border-l-4 border-primary mt-8">
               <h3 className="text-2xl font-bold text-dark mb-4">{config.specialty.title}</h3>
               <p className="text-lg text-gray-700">{config.specialty.description}</p>
             </div>
           </div>
 
-          {/* Features Flex */}
           <div className="flex flex-wrap justify-center gap-6">
             {config.features.map((feature, index) => (
               <div
@@ -81,7 +78,6 @@ export default function About({ config }: AboutProps) {
           </div>
         </div>
 
-        {/* CTA Button */}
         <div className="text-center">
           <a href="https://www.speedtest.net/es" target='_blank' rel="noopener noreferrer" className="btn btn-primary text-lg inline-flex items-center">
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

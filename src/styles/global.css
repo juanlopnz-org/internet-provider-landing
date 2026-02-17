@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #1E6EBE;
-  --color-secondary: #143C8C;
-  --color-accent: #FAC814;
-  --color-dark: #0F0F0F;
-  --color-light: #F8FAFC;
+  --color-primary: #12A36A;
+  --color-secondary: #0A5C3B;
+  --color-accent: #D4E21F;
+  --color-dark: #083826;
+  --color-light: #F4FBF7;
 
   --font-display: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -18,14 +18,15 @@
       var(--color-primary) 0%,
       var(--color-secondary) 100%);
 
-  --gradient-mesh: radial-gradient(at 0% 0%, rgba(30, 110, 190, 0.3) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(250, 200, 20, 0.15) 0px, transparent 50%),
-    radial-gradient(at 50% 50%, rgba(20, 60, 140, 0.1) 0px, transparent 50%);
+  --gradient-mesh:
+    radial-gradient(at 0% 0%, rgba(18, 163, 106, 0.30) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(212, 226, 31, 0.18) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(10, 92, 59, 0.15) 0px, transparent 50%);
 
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
-  --shadow-glow: 0 0 30px rgba(30, 110, 190, 0.3);
+  --shadow-sm: 0 2px 8px rgba(8, 56, 38, 0.08);
+  --shadow-md: 0 4px 20px rgba(8, 56, 38, 0.12);
+  --shadow-lg: 0 8px 40px rgba(8, 56, 38, 0.18);
+  --shadow-glow: 0 0 32px rgba(18, 163, 106, 0.45);
 }
 
 @layer base {
