@@ -12,7 +12,6 @@ export default function Footer({ siteName, contact }: FooterProps) {
     <footer className="bg-dark text-white">
       <div className="container-custom py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Brand */}
           <div>
             <div className="flex items-center space-x-2 mb-6">
                 <div className="w-20 h-20 rounded-lg flex items-center justify-center">
@@ -56,7 +55,6 @@ export default function Footer({ siteName, contact }: FooterProps) {
             </div>
           </div>
 
-          {/* Enlaces Rápidos */}
           <div>
             <h4 className="text-lg font-bold mb-6">Enlaces Rápidos</h4>
             <ul className="space-y-3">
@@ -75,7 +73,6 @@ export default function Footer({ siteName, contact }: FooterProps) {
             </ul>
           </div>
 
-          {/* Contacto */}
           <div>
             <h4 className="text-lg font-bold mb-6">Contacto</h4>
             <ul className="space-y-3 text-gray-400">
@@ -108,20 +105,6 @@ export default function Footer({ siteName, contact }: FooterProps) {
             </ul>
           </div>
 
-          {/* Dirección */}
-          {/* <div>
-            <h4 className="text-lg font-bold mb-6">Horarios</h4>
-            <ul className="space-y-3 text-gray-400">
-              <li>
-                <div className="font-semibold text-white mb-1">Lunes a Sábado</div>
-                <div className="text-sm">{contact.schedule.weekdays}</div>
-              </li>
-              <li>
-                <div className="font-semibold text-white mb-1">Domingos y Festivos</div>
-                <div className="text-sm">{contact.schedule.weekend}</div>
-              </li>
-            </ul>
-          </div> */}
         </div>
 
         <div className="border-t border-white/10 pt-8">

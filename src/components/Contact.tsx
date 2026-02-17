@@ -16,12 +16,10 @@ export default function Contact({ contact }: ContactProps) {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     
-    // Crear mensaje de WhatsApp
     const message = `Hola, soy ${formData.name}. ${formData.message}`;
     const whatsappNumber = contact.whatsapp[0].replace(/[^0-9]/g, '');
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     
-    // Abrir WhatsApp
     window.open(whatsappUrl, '_blank');
   };
 
@@ -35,7 +33,6 @@ export default function Contact({ contact }: ContactProps) {
   return (
     <section id="contacto" className="section section-alt">
       <div className="container-custom">
-        {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="mb-6">
             <span className="text-gradient">Contáctanos</span>
@@ -46,13 +43,11 @@ export default function Contact({ contact }: ContactProps) {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Information */}
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-dark mb-6">Información de Contacto</h3>
               
               <div className="space-y-6">
-                {/* WhatsApp */}
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center text-white">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -75,7 +70,6 @@ export default function Contact({ contact }: ContactProps) {
                   </div>
                 </div>
 
-                {/* Email */}
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -90,7 +84,6 @@ export default function Contact({ contact }: ContactProps) {
                   </div>
                 </div>
 
-                {/* Address */}
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-white">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -107,7 +100,6 @@ export default function Contact({ contact }: ContactProps) {
               </div>
             </div>
 
-            {/* Schedule */}
             <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-6 border-l-4 border-primary">
               <h4 className="font-bold text-dark mb-4 flex items-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,7 +119,6 @@ export default function Contact({ contact }: ContactProps) {
               </div>
             </div>
 
-            {/* Online Tools */}
             <div className="bg-white rounded-2xl p-6 shadow-md border border-gray-100">
               <h4 className="font-bold text-dark mb-4 flex items-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -158,7 +149,6 @@ export default function Contact({ contact }: ContactProps) {
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="card">
             <h3 className="text-2xl font-bold text-dark mb-6">Envíanos un Mensaje</h3>
             <form onSubmit={handleSubmit} className="space-y-6">

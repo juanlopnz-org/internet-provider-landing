@@ -36,14 +36,10 @@ export default function Navbar({ siteName, sections }: NavbarProps) {
 
   return (
     <nav
-      // className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      //   isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      // }`}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 ${isScrolled ? 'shadow-lg backdrop-blur-md' : ''}`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <a href="#inicio" className="flex items-center space-x-1">
             <div className="w-20 h-20 rounded-lg flex items-center justify-center">
               <img src="/images/only-logo.png" alt="LOGO" />
@@ -51,7 +47,6 @@ export default function Navbar({ siteName, sections }: NavbarProps) {
             <span className="text-xl font-bold text-gradient">{siteName}</span>
           </a>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <a
@@ -65,7 +60,6 @@ export default function Navbar({ siteName, sections }: NavbarProps) {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 rounded-lg hover:bg-gray-100"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -87,7 +81,6 @@ export default function Navbar({ siteName, sections }: NavbarProps) {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`md:hidden transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'
           }`}

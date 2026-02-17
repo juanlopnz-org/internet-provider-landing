@@ -186,11 +186,6 @@ export const siteConfig: SiteConfig = {
       description: "Brindamos soluciones de conectividad a zonas rurales y de difícil acceso, llevando Internet estable y de alta calidad donde los grandes operadores no tienen cobertura."
     },
     features: [
-      // {
-      //   icon: "users",
-      //   title: "Equipo Experto",
-      //   description: "Personal altamente calificado"
-      // },
       {
         icon: "award",
         title: "Calidad",
@@ -212,10 +207,6 @@ export const siteConfig: SiteConfig = {
         label: "500+",
         value: "Clientes Satisfechos"
       },
-      // {
-      //   label: "99.9%",
-      //   value: "Uptime Garantizado"
-      // }
     ]
   },
 
@@ -304,21 +295,6 @@ export const siteConfig: SiteConfig = {
         ],
         buttonText: "Consultar Disponibilidad"
       },
-      // {
-      //   name: "Ultra Velocidad",
-      //   speed: "200 Mbps",
-      //   price: 80000,
-      //   period: "por mes",
-      //   description: "Máxima velocidad para uso intensivo",
-      //   features: [
-      //     "Velocidad simétrica: 200 Mbps",
-      //     "Subida y bajada iguales",
-      //     "Sin límite de datos",
-      //     "Soporte técnico prioritario",
-      //     "Streaming 4K sin interrupciones"
-      //   ],
-      //   buttonText: "Consultar Disponibilidad"
-      // }
     ]
   },
 
@@ -344,12 +320,6 @@ export const siteConfig: SiteConfig = {
         link: "https://www.speedtest.net/es",
         color: "purple"
       },
-      // {
-      //   name: "Consultar Planes Empresariales",
-      //   description: "Descubre nuestras soluciones corporativas personalizadas",
-      //   link: "#planes-empresariales",
-      //   color: "blue"
-      // }
     ]
   }
 };

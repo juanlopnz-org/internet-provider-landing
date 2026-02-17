@@ -24,7 +24,6 @@ export default function Plans({ config }: PlansProps) {
   return (
     <section id="planes" className="section section-alt">
       <div className="container-custom">
-        {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="mb-6">
             <span className="text-gradient">{config.title}</span>
@@ -32,10 +31,8 @@ export default function Plans({ config }: PlansProps) {
           <p className="text-xl text-gray-600">{config.subtitle}</p>
         </div>
 
-        {/* CTA Section */}
         <div className="max-w-4xl mx-auto mb-16">
           <div className="bg-gradient-to-br from-primary to-secondary rounded-3xl p-8 md:p-12 text-white text-center relative overflow-hidden">
-            {/* Decorative elements */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
 
@@ -49,7 +46,6 @@ export default function Plans({ config }: PlansProps) {
           </div>
         </div>
 
-        {/* Plans Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {config.items.map((plan, index) => (
             <div
@@ -65,7 +61,6 @@ export default function Plans({ config }: PlansProps) {
                 </div>
               )}
 
-              {/* Plan Name */}
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-dark mb-2">{plan.name}</h3>
                 <div className="flex items-center justify-center gap-2 mb-4">
@@ -76,14 +71,12 @@ export default function Plans({ config }: PlansProps) {
                 </div>
               </div>
 
-              {/* Price */}
               <div className="text-center mb-6 pb-6 border-b border-gray-100">
                 <div className="text-4xl font-bold text-dark mb-1">{formatPrice(plan.price)}</div>
                 <div className="text-sm text-gray-500">{plan.period}</div>
                 <p className="text-sm text-gray-600 mt-3">{plan.description}</p>
               </div>
 
-              {/* Features */}
               <ul className="space-y-3 mb-8">
                 {plan?.features?.map((feature, fIndex) => (
                   <li key={fIndex} className="flex items-start gap-3">
@@ -95,7 +88,6 @@ export default function Plans({ config }: PlansProps) {
                 ))}
               </ul>
 
-              {/* CTA Button */}
               <button
                 className={`w-full btn ${plan.featured ? 'btn-primary' : 'btn-secondary'
                   }`}
@@ -108,13 +100,6 @@ export default function Plans({ config }: PlansProps) {
             </div>
           ))}
         </div>
-
-        {/* Bottom Note */}
-        {/* <div className="max-w-3xl mx-auto text-center mt-16">
-          <p className="text-gray-600">
-            * Todos los planes incluyen velocidad simétrica (subida y bajada iguales), sin límite de datos y soporte técnico especializado.
-          </p>
-        </div> */}
       </div>
     </section>
   );

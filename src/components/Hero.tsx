@@ -29,7 +29,6 @@ export default function Hero({ config, theme, contact }: HeroProps) {
     <section id='inicio' className="min-h-[calc(100vh-10rem)] md:min-h-[calc(100vh)] flex items-center justify-center overflow-hidden bg-mesh md:bg-mesh-md lg:bg-mesh-lg relative pt-40 pb-20 md:p-20">
       <div className="container-custom relative z-10">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Title */}
           <h1
             className={`mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
@@ -38,7 +37,6 @@ export default function Hero({ config, theme, contact }: HeroProps) {
             <span className="block text-gradient mt-2">{config.subtitle}</span>
           </h1>
 
-          {/* Description */}
           <p
             className={`text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
@@ -46,7 +44,6 @@ export default function Hero({ config, theme, contact }: HeroProps) {
             Líderes en conectividad rural. Llevamos Internet estable y de alta calidad a hogares y empresas en zonas donde no existe cobertura tradicional.
           </p>
 
-          {/* CTA Buttons */}
           <div
             className={`flex flex-wrap items-center justify-center gap-4 mb-20 transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
@@ -73,7 +70,6 @@ export default function Hero({ config, theme, contact }: HeroProps) {
             </a>
           </div>
 
-          {/* Stats */}
           <div
             className={`grid grid-cols-1 md:grid-cols-${config.stats.length} gap-8 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
@@ -93,7 +89,6 @@ export default function Hero({ config, theme, contact }: HeroProps) {
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <div
         className={`fixed bottom-8 left-1/2 z-50 transition-opacity duration-300 ${showIndicator ? "opacity-100 animate-bounce" : "opacity-0 pointer-events-none"
           }`}
