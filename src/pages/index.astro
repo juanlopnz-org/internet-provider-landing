@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LandingPage from '../components/LandingPage';
+import { siteConfig } from '../utils/siteConfig';
+---
+
+<Layout title={siteConfig.siteName} description={siteConfig.description}>
+  <LandingPage client:load />
+</Layout>
