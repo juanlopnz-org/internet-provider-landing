@@ -41,8 +41,12 @@ export default function Navbar({ siteName, sections }: NavbarProps) {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           <a href="#inicio" className="flex items-center space-x-1">
-            <div className="w-20 h-20 rounded-lg flex items-center justify-center">
-              <img src="/images/only-logo.png" alt="LOGO" />
+            <div className="h-12 w-12 flex items-center justify-center">
+              <img
+                src="/images/only-logo.png"
+                alt="LOGO"
+                className="h-10 w-auto object-contain"
+              />
             </div>
             <span className="text-xl font-bold text-gradient">{siteName}</span>
           </a>

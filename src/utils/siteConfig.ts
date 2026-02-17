@@ -114,14 +114,14 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  siteName: "GABANG COMUNICACIONES S.A.S",
+  siteName: "JUANLOPNZ S.A.S",
   tagline: "Internet de Alta Velocidad Para Zonas de Difícil Acceso",
   description: "Líderes en telecomunicaciones rurales. Conectamos tu hogar o empresa con Internet simétrico de alta calidad donde otros no llegan",
 
   contact: {
     whatsapp: [`+57 ${spacingWhatsAppNumber(whatsAppNumber)}`],
-    email: "gabangcomunicaciones@gmail.com",
-    address: "Calle 7a # 3a-61",
+    email: "jucalora@gmail.com",
+    address: "Calle 7a # 1-23",
     location: "El Placer (El Cerrito - Valle)",
     schedule: {
       weekdays: "8:00 AM - 12:00 PM, 2:00 PM - 6:00 PM",
@@ -157,11 +157,6 @@ export const siteConfig: SiteConfig = {
       tertiary: { text: "WhatsApp", link: `https://wa.me/57${whatsAppNumber}` }
     },
     stats: [
-      // {
-      //   label: "100%",
-      //   value: "Internet Simétrico",
-      //   description: "Velocidad garantizada de subida y bajada"
-      // },
       {
         label: "500+",
         value: "Clientes Conectados",
@@ -178,7 +173,7 @@ export const siteConfig: SiteConfig = {
   about: {
     title: "Sobre Nosotros",
     content: [
-      "GABANG COMUNICACIONES S.A.S es una empresa joven ubicada en El Placer – El Cerrito (Valle del Cauca), dedicada a la prestación de servicios integrales de telecomunicaciones e informática. Nacimos con el propósito de llevar servicios de Internet a zonas de difícil acceso, donde no existe cobertura tradicional.",
+      "JUANLOPNZ S.A.S es una empresa joven ubicada en El Placer – El Cerrito (Valle del Cauca), dedicada a la prestación de servicios integrales de telecomunicaciones e informática. Nacimos con el propósito de llevar servicios de Internet a zonas de difícil acceso, donde no existe cobertura tradicional.",
       "Contamos con infraestructura en Candelaria, Palmira, El Cerrito, El Placer, El Castillo, La Pampa y Boyacá. Además, ofrecemos instalación de cámaras de seguridad para hogares, comercios y empresas, con acceso remoto desde PC o smartphone."
     ],
     specialty: {
